@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gym App</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="#" class="logo">
+                <span class="logoname">GoFit</span>
+                <ion-icon name="barbell-sharp" aria-hidden="true"></ion-icon>
+            </a>
+
+            <nav class="navbar">
+                <ul>
+                    <a href="#home1" class="navbar-link active" >Home</a>
+
+                </ul>
+
+                <ul>
+                    <a href="#about" class="navbar-link active" >About Us</a>
+                    
+                </ul>
+
+                <ul>
+                    <a href="#plans" class="navbar-link active" >Plans</a>
+                </ul>
+
+                <ul>
+                    <a href="" class="navbar-link active" id="contact">Contact Us</a>
+                </ul>
+
+            </nav>
+            <span class="loginbtn" id="loginbtn">
+                <a href="#" class="btn btn-secondary" id="login">Login</a>
+
+            </span>
+            <span class="registerbtn" id="registerbtn" >
+                <a href="#" class="btn btn-secondary" id="register">Register</a>
+
+            </span>
+
+        </div>
+
+
+        
+    </header>
+
+   
+    <div id="main-page">
+
+        <nav class="sidebar">
+            <div id="AF-container">
+                <span style="color: brown;font-style:italic;padding-left:10%;">Admin features</span>
+                <ul id="admin-operations">
+                    <li class="sidebar-link" id="memberlist"><a href="#">Member List</a></li>
+                    <li class="sidebar-link" id="bills-btn"><a href="#">Manage Bills</a></li>
+                    <li class="sidebar-link"><a href="#">Plans</a></li>
+                    <li class="sidebar-link"><a href="#" id="contact">Contact Us</a></li>
+                </ul>
+            <br/>
+            </div>
+            <div id="MF-container"
+            <span style="color: brown;font-style:italic;padding-left:10%;">Member features</span>
+            <ul id="member-operations">
+                <li class="sidebar-link" id="view-receipts"><a href="#">View Bill Receipts</a></li>
+                <li class="sidebar-link" id="view-notif"><a href="#">View Bill Notifications</a></li>
+            </ul>
+        </nav>
+        <div id="content-container">
+            <div id="home-container">
+                <div id="home1">
+                    <h2 class="fitness-club-heading">THE BEST FITNESS CLUB</h2>
+                    <p class="fitness-club-subheading">Work Hard To Get Better Life</p>
+                    <p class="fitness-club-subheading">Duis mollis felis quis libero dictum vehicula. Duis dictum lorem mi, a faucibus nisi eleifend eu.</p>
+                    <br/>
+                    <a href="#" class="fitness-club-button">GET STARTED</a>
+                </div>
+
+                <div id="about">
+                    <h2 class="fitness-club-heading">About Us</h2>
+                    <p class="about-text">
+                        Nam ut hendrerit leo. Aenean vel ipsum nunc. Curabitur in tellus vitae nisi aliquet dapibus non et erat. 
+                        Pellentesque porta sapien non accumsan dignissim curabitur sagittis nulla sit amet dolor feugiat.
+
+                        Integer placerat vitae metus posuere tincidunt. Nullam suscipit ante ac aliquet viverra vestibulum ante ipsum primis.</p>
+                </div>
+                <br/>
+
+                <h2 class="fitness-club-heading">Plans</h2>
+                <div id="plans">
+                    <span class="plantile">
+                        <h2 class="planheader" style="color: goldenrod;">GoFit ELITE</h2>
+                        <p>Unlimited access to group classes, all gyms and at-home workouts</p>
+                    </span>
+                    <span class="plantile">
+                        <h2 class="planheader" style="background: linear-gradient(90deg, rgba(154, 173, 176, 1) 6%, rgba(97, 96, 87, 1) 49%, rgba(154, 173, 176, 1) 100%);
+                        -webkit-background-clip: text;background-clip: text;
+                        color:transparent" >
+                            GoFit PRO
+                        </h2>
+                        <p>Unlimited access to all PRO gyms and at-home workouts</p>
+                    </span>
+                    <span class="plantile">
+                        <h2 class="planheader" style="color:aliceblue;">GoFit SELECT</h2>
+                        <p>Unlimited access to single center and at-home workouts</p>
+                    </span>
+                </div>                   
+
+            </div>
+            <div id="login-container">
+                <h1>LOGIN</h1>
+                <form id="login-form">
+                    <label for="usertype" id="userlabel">Account Type: </label>
+                    <select name="usertype" id="usertype">
+                        <option value="Admin">Admin</option>
+                        <option value="Member">Member</option>
+                        
+    
+                    </select>
+                    <input type="text" placeholder="Username" id="login-username"/>
+                    <input type="password" placeholder="Password" id="login-password"/>
+                    <button type="submit">Login</button>
+                    
+                </form>
+            </div>
+    
+            <div id="register-container">
+                <h1>REGISTER</h1>
+                <form id="register-form">
+                    <label for="usertype" id="userlabel">Account Type: </label>
+                    <select name="usertype" id="usertype">
+                        <option value="Admin">Admin</option>
+                        <option value="Member">Member</option>
+                        
+    
+                    </select>
+                    <input type="email" placeholder="Email" id="register-email"/>
+                    <input type="text" placeholder="Username" id="register-username"/>
+                    <input type="password" placeholder="Password" id="register-password"/>
+                    <button type="submit">Register</button>
+                    
+                </form>
+            </div>
+    
+            <div id="admin-page">
+                <h1>HELLO ADMIN</h1>
+            </div>
+
+            <div id="memberlist-container">
+                <h1>MEMBER LIST</h1><br/>
+            </div>
+
+            <div id="bills-container">
+                <h1>BILLS</h1><br/>
+                <table id="bills-table">
+                    <thead>
+                        <tr>
+                            <th>Member Name</th>
+                            <th>Remaining Bill</th>
+                        </tr>
+                    </thead>
+                    <tbody id="bills-body">
+
+                    </tbody>
+                   
+                    
+                    
+                </table>
+                <button id="create-bill">Create Bill</button>
+                <div id="create-bill-container">
+                    <form id="create-bill-form">
+                        <label for="bill-name">Enter name of user</label>
+                        <input id="bill-name" placeholder="Username"/><br/>
+                        <label for="bill-amt">Enter Bill amount to add</label>
+                        <input id="bill-amt" placeholder="Bill amount"/><br/>
+                        <button type="submit">Submit</button>
+    
+
+                    </form>
+                   
+                    
+                </div>
+
+            </div>
+
+        </div>
+        
+    </div>
+  
+ 
+  <script src="script.js" type="module"></script>
+</body>
+</html>

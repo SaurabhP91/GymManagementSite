@@ -1,0 +1,245 @@
+
+.header-container{
+    display: flex;
+    
+    width: 100%;
+    background-color: brown;
+}
+
+
+.header-container a{
+    text-decoration: none;
+    color:white;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+
+}
+.navbar{
+    display: flex;
+    margin-left: auto;
+}
+ul{
+    color:black;
+    text-decoration: none;
+}
+.loginbtn{
+    display: flex;
+    align-items: center;
+    border:5px;
+    margin-left: auto;
+
+    justify-content: center;
+    width:100px;
+    background-color: red;
+  
+}
+
+.registerbtn{
+    display: flex;
+    width:100px;
+    background-color: red;
+    align-items: center;
+
+    justify-content: center;
+  
+}
+
+#main-page{
+    width:100%;
+    height:100%;
+    background-image: linear-gradient(rgba(0,0,50,0.8),rgba(0,0,50,0.8)),url(samuel-girven-2e4lbLTqPIo-unsplash.jpg);
+    background-position: cover;
+    position: absolute;
+    background-size: contain;
+    
+    overflow-y:auto;
+    
+    flex-grow: 1;
+}
+
+h1{
+    color: white;
+    background-color:rgb(131, 18, 25);
+}
+
+#login-container{
+    display: none;
+   
+}
+
+#register-container{
+   display: none;
+}
+
+#admin-page{
+    display: none;
+}
+
+#memberlist-container{
+    display: none;
+    position: relative;
+    left: 1px;
+}
+
+#memberlist :active + #memberlist-container{
+    display: block;
+}
+
+#memberlist-container li{
+    color: aliceblue;
+}
+#bills-btn :active{
+    pointer-events: none;
+}
+#bills-container{
+    display: none;
+    color: aliceblue;
+}
+
+#bills-table{
+    border: 1px solid;
+}
+
+#bills-table th,td{
+    border:1px solid;
+}
+
+#create-bill-container{
+    display: none;
+}
+
+#userlabel{
+    color: aliceblue;
+}
+
+#register-email{
+    width: 200px;
+}
+
+.sidebar {
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    padding-top: 20px;
+    position: fixed;
+    display: flex;
+    background-color:grey;
+    color:black;
+    flex-direction: column;
+
+
+    
+  }
+
+.sidebar a{
+    text-decoration: none;
+    color:black;
+
+  }
+.sidebar ul{
+
+
+}
+#member-operations{
+    
+}
+#content-container{
+    padding-left: 200px;
+}
+
+#home-container {
+    padding: 2rem;
+    text-align: center;
+    height: 300px;
+  }
+
+#about{
+    margin-top: 200px;
+    position: relative;
+    display: block;
+    height:300px;
+    width: 100%;
+    background-color: rgba(208, 75, 8, 0.3);
+    margin-bottom: 200px;
+
+}
+.about-text{
+    font-size:1.5rem;
+    display: block;
+    line-height: 1.6rem;
+    color: aliceblue;
+}
+  
+  .fitness-club-heading {
+    color: aliceblue;
+    font-size: 2rem;
+    margin-top: 0;
+    background-color: orangered;
+    width:fit-content;
+    margin:auto;
+    padding:0.7rem;
+    border-radius: 20px;
+    justify-content: center;
+  }
+  #home1{
+    justify-content: center;
+    display: block;
+    flex-direction: column;
+  }
+  
+  .fitness-club-subheading {
+    color: aliceblue;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+  
+  .fitness-club-button {
+    background-color: #28a745;
+    border: none;
+    border-radius: 0.25rem;
+    color: #fff;
+    padding: 0.75rem 2rem;
+    margin-top: 40px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .fitness-club-button:hover {
+    background-color: #218838;
+  }
+
+  #plans{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .plantile{
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    margin:5px;
+    padding:10px;
+    width:25%;
+    color:aliceblue;
+    margin-top: 50px;
+
+  }
+
+  .planheader{
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  }
+
+
+  #AF-container{
+    display: none;
+  }
+
+  #MF-container{
+    display: none;
+    
+  }
