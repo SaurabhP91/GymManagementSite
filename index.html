@@ -61,14 +61,17 @@
                 </ul>
             <br/>
             </div>
-            <div id="MF-container"
-            <span style="color: brown;font-style:italic;padding-left:10%;">Member features</span>
+            <div id="MF-container">
+                <span style="color: brown;font-style:italic;padding-left:10%;">Member features</span>
             <ul id="member-operations">
                 <li class="sidebar-link" id="view-receipts"><a href="#">View Bill Receipts</a></li>
                 <li class="sidebar-link" id="view-notif"><a href="#">View Bill Notifications</a></li>
             </ul>
+            </div>
+            
         </nav>
         <div id="content-container">
+            <!--        HOMEPAGE        -->
             <div id="home-container">
                 <div id="home1">
                     <h2 class="fitness-club-heading">THE BEST FITNESS CLUB</h2>
@@ -109,6 +112,7 @@
                 </div>                   
 
             </div>
+            <!--        LOGINPAGE       -->
             <div id="login-container">
                 <h1>LOGIN</h1>
                 <form id="login-form">
@@ -125,7 +129,7 @@
                     
                 </form>
             </div>
-    
+            <!--        REGISTER PAGE       -->
             <div id="register-container">
                 <h1>REGISTER</h1>
                 <form id="register-form">
@@ -143,15 +147,15 @@
                     
                 </form>
             </div>
-    
+            <!--        ADMIN PAGE      -->
             <div id="admin-page">
                 <h1>HELLO ADMIN</h1>
             </div>
-
+            <!--        SIDEBAR MEMBER LIST     -->
             <div id="memberlist-container">
                 <h1>MEMBER LIST</h1><br/>
             </div>
-
+            <!--        SIDEBAR BILLS LIST      -->
             <div id="bills-container">
                 <h1>BILLS</h1><br/>
                 <table id="bills-table">
@@ -176,13 +180,26 @@
                         <label for="bill-amt">Enter Bill amount to add</label>
                         <input id="bill-amt" placeholder="Bill amount"/><br/>
                         <button type="submit">Submit</button>
-    
 
-                    </form>
-                   
-                    
+                    </form>  
                 </div>
-
+            </div>
+            <!--        SIDEBAR MEMBER VIEW BILL RECEIPTS       -->
+            <div id="member-bill-container">
+                <table id="member-bill-table">
+                    <thead>
+                        <tr>
+                            <th>S.No.</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Remaining bill</th>
+                            <th>Payment</th>
+                        </tr>
+                    </thead>
+                    <tbody id="member-bill-body">
+                        
+                    </tbody>
+                </table>
             </div>
 
         </div>

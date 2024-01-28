@@ -277,6 +277,8 @@ loginForm.addEventListener("submit", (e) => {
 
           }
 
+          var currentUser = currentItemUsername;
+
           
           
         }
@@ -431,3 +433,86 @@ billForm.addEventListener("submit", (e) => {
   createBillEl.style.display = 'none';
 })
 
+// sidebar member bill receipts display
+let memberBillEl = document.getElementById("member-bill-container");
+let memberBillButton = document.getElementById("view-receipts");
+
+memberBillButton.addEventListener('click', (e) => {
+  e.preventDefault();
+  memberBillEl.style.display = 'block';
+
+  onValue(memberListInDB, function(snapshot){
+    let itemsArray = Object.values(snapshot.val());
+    console.log(itemsArray);
+    
+    let memberBillTable = document.getElementById('member-bill-table');
+    let memberBillBody = document.getElementById('member-bill-body');
+    let loginButton = document.getElementById('login');
+
+    let loginText = loginButton.textContent || loginButton.innerHTML;
+    let words = loginText.split(' ');
+    let extractedWord = words[1];
+    let count = 1;
+
+    memberBillBody.innerHTML = "";
+    for(let i=0; i<itemsArray.length; i++)
+    {
+      if(itemsArray[i].uservalue == extractedWord)
+      {
+        console.log("current user found");
+        var row = memberBillBody.insertRow();
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+        var cell3 = row.insertCell(2);
+        var cell4 = row.insertCell(3);
+        var cell5 = row.insertCell(4);
+
+        cell1.textContent = count;
+        cell2.textContent = itemsArray[i].uservalue;
+        cell3.textContent = itemsArray[i].emailvalue;
+        cell4.textContent = itemsArray[i].bill;8
+        if(itemsArray[i].bill>0)
+        {
+          cell5.textContent = 'Pay bill';
+          
+          cell5.addEventListener('click',function(){
+            itemsArray[i].bill = 0;
+            console.log('bill paid');
+          })
+
+        }
+        else{
+          cell5.textContent = 'payment done';
+        }
+
+        
+      }
+    }
+
+  })
+
+})
+/*
+function fetchBills(){
+  onValue(memberListInDB, function(snapshot){
+    let itemsArray = Object.values(snapshot.val());
+    //billsEl.innerHTML = "<h1>BILLS</h1>";
+    let billsTable = document.getElementById('bills-table');
+    let billsBody = document.getElementById('bills-body');
+    //NEW
+    billsBody.innerHTML = "";
+    console.log(itemsArray);
+    
+    itemsArray.map(function(item){
+      var row = billsBody.insertRow();
+      var cell1 = row.insertCell(0);
+      var cell2 = row.insertCell(1);
+
+      cell1.textContent = item.uservalue;
+      cell2.textContent = item.bill;
+      //billsEl.innerHTML += item.uservalue + ` : ` + item.bill + `<br/>`;
+    })
+    
+  })
+}
+*/
