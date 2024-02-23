@@ -11,3 +11,5 @@ Viewing Bill Receipts - provides detail about remaining bill for the current mem
 ![Screenshot (17)](https://github.com/SaurabhP91/GymManagementSite/assets/89243008/1e745fbe-26a1-448b-a251-7a0e2290d8f4)
 
 ![Screenshot (18)](https://github.com/SaurabhP91/GymManagementSite/assets/89243008/1f08c39c-6db3-4612-a589-a376a093ee29)
+
+![Screenshot (19)](https://github.com/SaurabhP91/GymManagementSite/assets/89243008/c6e8b955-d151-4940-b158-274e7b28eb4e)
