@@ -1,3 +1,4 @@
+## Project Description
 Gym Management Website for gym admins and members.
 Users can view details about the Gym website and plans they provide.
 Login and register functionality to update the firebase realtime database for both admins and members.
